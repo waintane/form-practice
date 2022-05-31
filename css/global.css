@@ -1,0 +1,85 @@
+body{
+    background-image:url("../img/mountains-1412683.png");
+    background-repeat: no-repeat;
+    background-size: clamp(1500px, 150vw);
+    background-position: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+#logo{
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    
+}
+main{
+    border-radius: 20%;
+    
+    width: 900px;
+    height: 640px;
+    background-color: grey;
+    margin: 50px auto;
+    display: flex;
+}
+section{
+    width: 450px;
+    box-shadow: 0 0 10px 0 white;
+}
+main section:first-of-type{
+    background-color: lightblue;
+    background-image: url("../img/painting-3995999_1280.jpg");
+    /*border-radius: 20% 0 0 20%;*/
+    color: white;
+}
+main section:last-of-type{
+    background-color: rgb(255, 255, 255);
+    /*border-radius: 0% 20% 20% 0%;*/
+}
+ul{
+    list-style: none;
+    margin-block-start: 0em;
+    padding-inline-start: 0px
+}
+li{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    margin: 50px;
+}
+button{
+    background: linear-gradient(60deg,rgb(211, 211, 243),rgb(182, 182, 255));
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+}
+button:focus{
+    background: linear-gradient(60deg,rgb(189, 189, 240),rgb(160, 160, 253));
+}
+.presentation .container div{
+    margin: 100px 0px;
+    
+}
+.presentation .container div h1{
+    font-size: 2.9rem;
+    letter-spacing: -2px;
+}
+.presentation .container{
+    margin: 100px;
+}
+.presentation p{
+    font-size: 1.3rem;
+}
+.password-pattern{
+    color: rgb(165, 165, 165);
+    margin: 0px;
+    font-size: 0.8rem;
+}

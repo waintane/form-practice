@@ -4,52 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
     <title>form practice</title>
 </head>
 
 <body>
-    
+
+    <div id="logo">logo</div>
+
     <main>
 
         <section class="presentation">
-            <h1>Join and share by joining our art community</h1>
-            <p>get free acces to millions of pieces of art, share courses and work with ohter artists</p>
-            <p>Art by ?</p>
+            <div class="container">
+                <div>
+                    <h1>Join and share with our art community</h1>
+                    <p>get free acces to millions of pieces of art, share courses and work with ohter artists</p>
+                </div>
+                <p>Art by ?</p>
+            </div>
         </section>
 
         <section class="formulaire">
-            <form action="" method="post">
-                <div class="form-top">
-                    <h1>Join ArtCity</h1>
-                    <div>
-                        <p>Already a member? <a href="">Login</a></p>
-                    </div>                   
-                </div>
-                <div class="form input">
-                    <ul>
-                        <li>
-                            <label for="username">Add your username</label>
-                            <input type="text" name="username" id="username" required>
-                        </li>
-                        <li>
-                            <label for="email">Add your email</label>
-                            <input type="email" name="email" id="email" required>
-                        </li>
-                        <li>
-                            <label for="password">Add your password</label>
-                            <input type="password" name="password" id="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}">
-                            <p class="password-pattern">Min 6 characters, 1 number and a capital letter</p>
-                        </li>
-                    </ul>
-                </div>
+            <div class="container">
+                <form action="" method="post">
+                    <div class="form-top">
+                        <h1>Join ArtCity</h1>
+                        <div>
+                            <p>Already a member? <a href="">Login</a></p>
+                        </div>                   
+                    </div>
+                    <div class="form input">
+                        <ul>
+                            <li>
+                                <label for="username">Add your username</label>
+                                <input type="text" name="username" id="username" required>
+                            </li>
+                            <li>
+                                <label for="email">Add your email</label>
+                                <input type="email" name="email" id="email" required>
+                            </li>
+                            <li>
+                                <label for="password">Add your password</label>
+                                <input type="password" name="password" id="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                                <p class="password-pattern">Min 6 characters, 1 number and a capital letter</p>
+                            </li>
+                            <li>
+                                <label for="password2">confirm password</label>
+                                <input type="password"id="password2" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                                <p class="password-pattern">Min 6 characters, 1 number and a capital letter</p>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="form-button">
-                    <button>Sign-in</button>
-                </div>
+                    <div class="form-button">
+                        <button>Sign-in</button>
+                    </div>
 
-                <p>By joining ArtCity, I confirm that I have read and agree to the ArtCity 
-                    <a href="">Terms of Service, Privacy Policy</a>, and to receive emails and updates</p>
-            </form>
+                    <p>By joining ArtCity, I confirm that I have read and agree to the ArtCity 
+                        <a href="">Terms of Service, Privacy Policy</a>, and to receive emails and updates</p>
+                </form>
+            </div>
         </section>
 
     </main>
