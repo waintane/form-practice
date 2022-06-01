@@ -1,3 +1,7 @@
+:root{
+    --main-color: rgb(160, 160, 253);
+    --input-info: rgb(165, 165, 165);
+}
 body{
     background-image:url("../img/mountains-1412683.png");
     background-repeat: no-repeat;
@@ -54,12 +58,32 @@ li{
 .container{
     margin: 50px;
 }
+@keyframes animeBouton{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 button{
-    background: linear-gradient(60deg,rgb(211, 211, 243),rgb(182, 182, 255));
-    border: none;
+    background: linear-gradient(60deg,rgb(211, 211, 243),var(--main-color));
+    border: 1px solid rgb(165, 165, 253);
     width: 100%;
     height: 40px;
     font-weight: bold;
+    transition: 4s;
+    
+}
+button:hover{
+    background: linear-gradient(60deg,rgb(211, 211, 243),rgb(112, 112, 248));
+    background-size: 150% 150%;
+    animation-name: animeBouton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
 }
 button:focus{
     background: linear-gradient(60deg,rgb(189, 189, 240),rgb(160, 160, 253));
@@ -79,7 +103,28 @@ button:focus{
     font-size: 1.3rem;
 }
 .password-pattern{
-    color: rgb(165, 165, 165);
+    color: var(--input-info);
     margin: 0px;
     font-size: 0.8rem;
+}
+input{
+    border: 1px solid var(--input-info);
+    height: 25px;
+}
+label{
+    font-weight: 500;
+}
+input:focus:invalid{
+    outline: none;
+    border: 2px solid red;
+}
+input:focus:valid{
+    outline:none;
+    border: 2px solid green;
+}
+li:first-of-type, li:nth-of-type(2){
+    margin-top: 10px;
+}
+a{
+    color: var(--main-color);
 }
