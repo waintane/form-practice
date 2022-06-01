@@ -27,7 +27,7 @@
 
         <section class="formulaire">
             <div class="container">
-                <form action="" method="post">
+                <form onsubmit ="return matchPassword()">
                     <div class="form-top">
                         <h1>Join ArtCity</h1>
                         <div>
@@ -42,7 +42,7 @@
                             </li>
                             <li>
                                 <label for="email" title="required">Add your email</label>
-                                <input type="email" name="email" id="email" required>
+                                <input type="email" name="email" id="email" pattern="(?=.*[@]).{1,}" required>
                             </li>
                             <li>
                                 <label for="password" title="required">Add your password</label>
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="form-button">
-                        <button>Sign-in</button>
+                        <button type="submit" value="Submit">Sign-in</button>
                     </div>
 
                     <p>By joining ArtCity, I confirm that I have read and agree to the ArtCity 
@@ -68,6 +68,6 @@
         </section>
 
     </main>
-
+    <script src="javascript/javascript.js"></script>
 </body>
 </html>
