@@ -9,6 +9,28 @@
     }
 }
 
+::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(238, 238, 238);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(182, 182, 182);
+    border-right: none;
+    border-left: none;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
 
     body{
         background-image:url("../img/mountains-1412683.png");
