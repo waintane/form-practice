@@ -1,14 +1,17 @@
+main{
+    border-radius: 20%;
+    
+    width: 900px;
+    height: 640px;
+    background-color: rgba(128, 128, 128, 0);
+    margin: 50px auto;
+    display: flex;
+}
+
 :root{
     --main-color: rgb(160, 160, 253);
     --input-info: rgb(165, 165, 165);
 }
-@media only screen and (max-width: 1100px) {
-
-    #logo{
-        display: none;
-    }
-}
-
 ::-webkit-scrollbar {
     display: block;
     width: 15px;
@@ -50,15 +53,7 @@
         font-size: 3rem;
         
     }
-    main{
-        border-radius: 20%;
-        
-        width: 900px;
-        height: 640px;
-        background-color: grey;
-        margin: 50px auto;
-        display: flex;
-    }
+
     section{
         width: 450px;
         box-shadow: 0 0 10px 0 white;
@@ -157,4 +152,20 @@
     a{
         color: var(--main-color);
     }
+/*tablette*/
+@media only screen and (max-width: 1100px) {
 
+    #logo{
+        display: none;
+    }
+}
+/*cell*/
+@media only screen and (max-width: 400px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 920px;
+    }
+}
